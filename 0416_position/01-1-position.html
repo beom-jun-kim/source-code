@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pos basic</title>
+<style>
+    .container {
+        border: 1px solid #000;
+        padding: 1rem;
+        width: 600px;
+        height: 600px;
+    }
+    .box {
+        border: 1px solid #000;
+        height: 100px;
+        background:skyblue;
+        width: 100px;
+        height: 100px;
+    }
+    .static {
+        background: gold;
+
+        /* default value다 */
+        position: static;
+
+        /* 얘네들 안먹음 */
+        top: 10%;
+        left: 10%;
+    }
+    .relative {
+        /* ~으로부터, 본인이 위치했던 곳이 기준 */
+        position: relative;
+
+        /* 부모크기에 대한 10% */
+        /* top: 10%;
+        left: 10%; */
+        background: slateblue;
+    }
+    .absolute {
+        /* 공중에 뜬다(겹쳐졌다) */
+        /* 컨텐츠값이 기본값,크기가 작아짐 > inline-block으로 바뀜*/
+        /* position: absolute; */
+
+        /* html이 기준이 된다 */
+        /* top: 30%;
+        left: 30%; */
+        /* opacity: .5; */
+
+        /* top left가 우선순위 */
+        /* 화면의 영역이 커져서 스크롤이 생김 */
+        /* top: 10%;
+        left: 10%; */
+        background: teal;
+    }
+    .fixed {
+        /* 특징 : absolute와 같다 */
+        /* 공중에 뜬다(겹쳐졌다) */
+        /* 컨텐츠값이 기본값,크기가 작아짐 > inline-block으로 바뀜*/
+        /* 스크롤로 화면이 바껴도 계속 그자리에 고정 */
+        /* position: fixed; */
+        background: coral;
+
+        /* 화면밖으로 나감, 없어짐 */
+        /* top: 10%;
+        left: 10%; */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">top</div>
+        <div class="box static">static</div>
+        <div class="box relative">relative</div>
+        <div class="box absolute">absolute</div>
+        <div class="box fixed">fixed</div>
+        <div class="box">bottom</div>
+    </div>
+</body>
+</html>

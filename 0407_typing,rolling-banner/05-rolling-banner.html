@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>infinte scroll banner</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .banner {
+        /* border: 1px solid #000; */
+        /* margin-top: 50px; */
+        /* text-align: center; */
+    }
+
+    /* 가림을 당하는 요소 */
+    .bannerBox {
+        width: 400px;
+        height: 90px;
+        /* border: 1px solid #000; */
+        margin: 50px auto;
+        overflow: hidden;
+    }
+    /* 가리는요소 */
+    /* 안에 있어야 포토샵의 클리핑마스크처럼 밖에 있는요소가 가려진다 */
+    /* 배너의 모든 갯수를 합친 넓이만큼 넓이를 줘야함 */
+    .scroll {
+        width: 1200px;
+        font-size: 0;
+        animation: scroll 7s infinite alternate;
+    }
+    img {
+        width: 400px;
+        height: 90px;
+    }
+    @keyframes scroll{
+        0% {
+            margin-left: 0;
+        }
+        50% {
+            margin-left: -400px;
+        }
+        100% {
+            margin-left: -800px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="banner">
+        <!-- <h1>scroll banner test</h1> -->
+        <div class="bannerBox">
+            <div class="scroll">
+                <img src="./images/banner-1.jpg" alt="">
+                <img src="./images/banner-2.jpg" alt="">
+                <img src="./images/banner-3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

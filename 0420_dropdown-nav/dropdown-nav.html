@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    header {
+        height: 100px;
+        text-align: center;
+        background: darkcyan;
+        padding-top: 50px;
+    }
+    .menu .menuBox {
+        display: inline-block;
+        width: 100px;
+    }
+    .menu .menuBox a {
+        display: block;
+        line-height: 50px;
+    }
+    .menu .menuBox > a {
+        color: #fff;
+    }
+    .menu .menuBox:hover > a {
+        background: grey;
+        color: #fff;
+    }
+    .menu .menuBox .submenu {
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+    }
+    .menu .menuBox .submenu a {
+        height: 50px;
+    }
+    .menu .menuBox:hover .submenu {
+        opacity: 1;
+        transform: translateY(10px);
+        visibility: visible;
+    }
+    .menu .menuBox .submenu a:hover {
+        background: grey;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li class="menuBox">
+                <a href="#">menu</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                    <li><a href="#">submenu</a></li>
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </li>
+            <li class="menuBox">
+                <a href="#">menu</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                    <li><a href="#">submenu</a></li>
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </li>
+            <li class="menuBox">
+                <a href="#">menu</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu</a></li>
+                    <li><a href="#">submenu</a></li>
+                    <li><a href="#">submenu</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+</body>
+</html>

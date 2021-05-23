@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.moreContainer {
+    padding: 2%;
+    height: 100%;
+}
+
+/* banner */
+.banner {
+    display: block;
+    /* border: 1px solid #000; */
+    height: 60px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+.banner:hover {
+    background-color: #ccc;
+}
+.banner .txtBox{
+    display: inline-block;
+    /* background-color: slateblue; */
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.banner .txtBox h4 {
+    font-weight: bold;
+}
+.banner .txtBox h6 {
+    color: #adadad;
+}
+.banner i {
+    vertical-align: top;
+    padding-top: 22px;
+}
+/* icons */
+.iconsContainer {
+    margin-top: 20px;
+    font-size: 0;
+}
+.iconsContainer .iconItem {
+    font-size: 16px;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 8px 0;
+    display: inline-block;
+}
+.iconsContainer .iconItem:hover {
+    color: #666;
+}

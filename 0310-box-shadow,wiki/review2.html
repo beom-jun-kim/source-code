@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review - css</title>
+    <style>
+        .parent p:first-child {
+            color: red;
+        }
+        .parent p:last-child {
+            color: blue;
+        }
+        .parent p:nth-child(3) {
+            color: yellow;
+        }
+        .parent p:nth-last-child(2) {
+            color: salmon;
+        }
+        .parent_2 p:nth-of-type(3) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <hr>
+
+    <div class="parent_2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">sample</a>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body> 
+</html>

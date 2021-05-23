@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>px</title>
+<style>
+    .box {
+        width: 500px;
+        height: 500px;
+        background: coral;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .child {
+        background: yellow;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+    }
+    .one {
+        bottom: 500px;
+    }
+    .two {
+        right: 0;
+        bottom: 500px;
+    }
+    .three {
+        left: 500px;
+    }
+    .four {
+        bottom: 0;
+        left: 500px;
+    }
+    .five {
+        right: 0;
+        top: 500px;
+    }
+    .six {
+        top: 500px;
+        
+    }
+    .seven {
+        bottom: 0;
+        right: 500px;
+    }
+    .eight {
+        right: 500px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="child one">1</div>
+        <div class="child two">2</div>
+        <div class="child three">3</div>
+        <div class="child four">4</div>
+        <div class="child five">5</div>
+        <div class="child six">6</div>
+        <div class="child seven">7</div>
+        <div class="child eight">8</div>
+    </div>
+</body>
+</html>

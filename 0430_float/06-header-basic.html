@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>header basic</title>
+<style>
+    body {
+        margin: 0;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    h1 {
+        margin: 0;
+    }
+    header {
+        background: #111;
+        color: #999;
+        overflow: hidden;
+        padding: 0 200px;
+    }
+    h1.logo {
+        float: left;
+        font-size: 4rem;
+    }
+    ul.gnb {
+        /* background: coral; */
+        float: right;
+        /* absolute, float > block이지만 특수한 환경(레이어)에 있다 */
+    }
+    .gnbItem {
+        /* background: gold; */
+        float: left;
+        font-size: 2rem;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            logo
+        </h1>
+        <ul class="gnb">
+            <li class="gnbItem">
+                menu1
+            </li>
+            <li class="gnbItem">
+                menu2
+            </li>
+            <li class="gnbItem">
+                menu3
+            </li>
+        </ul>
+    </header>
+</body>
+</html>

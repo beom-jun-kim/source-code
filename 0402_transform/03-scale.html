@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scale</title>
+<style>
+    .box {
+        width: 300px;
+        height: 300px;
+        background: gold;
+        margin: 200px auto;
+        border: 10px solid red;
+    }
+    img {
+        max-width: 100%;
+        transition: 1s;
+    }
+
+    /* 
+        참고:scale을 1.2로 잡았습니다.
+        이것은 소영 디자이너와 2021. 04. 02 기획 합의된 내용임
+    */
+    .box:hover img {
+        /* 확대 */
+
+        
+        /* scale default:1 */
+        transform:scale(1.2, 1.5)
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/easter-4945288_640.jpg" alt="">
+    </div>
+</body>
+</html>

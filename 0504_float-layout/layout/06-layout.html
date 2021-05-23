@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    * {
+        margin: 0;
+    }
+    header {
+        background: firebrick;
+        overflow: hidden;
+    }
+    .headerLeft {
+        height: 100px;
+        width: 200px;
+        background: gold;
+        float: left;
+    }
+    .headerRight {
+        height: 100px;
+        width: 200px;
+        background: grey;
+        float: right;
+    }
+    main {
+        height: 500px;
+        background: indianred;
+    }
+    .section {
+        overflow: hidden;
+        background: cadetblue;
+    }
+    .sectionItem {
+        /* display: inline-block; */
+        width: 30%;
+        height: 100px;
+        background: indigo;
+        margin-right: 5%;
+        float: left;
+    }
+    .sectionItem:last-child {
+        margin-right: 0;
+    }
+    footer {
+        height: 100px;
+        background: gold;
+        clear: both;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <article class="headerLeft">
+            <h1>left</h1>
+        </article>
+        <article class="headerRight">
+            <h1>right</h1>
+        </article>
+    </header>
+    <main>
+        <h1>main</h1>
+    </main>
+    <section>
+        <article class="sectionItem">
+            <h1>article</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article2</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article3</h1>
+        </article>
+    </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float solution</title>
+<style>
+    header {
+        border: 10px solid coral;
+    }
+    img {
+        width: 200px;
+        float: left;
+    }
+    /* header:after {
+        content: '';
+        display: block;
+        clear:both;
+    } */
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* float을 해결하는 5가지 방법 
+        1)height를 강제로 준다 ( 너무 1차원적임.. 비추)
+        2)display:flow-root;
+        3)overflow:hidden; (가장 보편적)
+        -box-shadow를 줄경우 사용주의
+        4)pseudo element를 만들어서 clear:both 선언한다
+        (보편적 방법2)
+        5)clearFix (보편적 3)
+    */
+</style>
+</head>
+<body>
+    <header class="clearfix">
+        <img src="./img/isanghae_300x300.png" alt="">
+        <div style="clearfix:both">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis aliquid quibusdam sed at excepturi dolor ex debitis libero accusamus! Accusamus dolorum dolor unde. Minima iusto modi libero vel sequi! Odit.</div>
+    </header>
+</body>
+</html>

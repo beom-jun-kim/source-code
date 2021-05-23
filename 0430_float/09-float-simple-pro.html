@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float simple project</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        height: 400px;
+        background: url(./img/mountain-3676150_1280.jpg) no-repeat center/cover;
+        /* border: 2px solid #000; */
+    }
+    .inner {
+        /* height: 400px; */
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        width: 800px;
+    }
+    .logo {
+        color: #fff;
+        text-shadow: 0 10px 10px #000;
+        /* text-align: left; */
+        /* width: 300px; */
+        /* margin: 0 auto; */
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%);
+        text-transform: capitalize;
+    }
+    .cardItem {
+        margin-top: -50px;
+    }
+    .card {
+        /* border: 1px solid #000; */
+        background: darkkhaki;
+        /* margin-top: -20px; */
+        padding: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .card .photo {
+        width: 200px;
+        height: 200px;
+        float: left;
+        /* margin-right: 10px; */
+    }
+    .card:nth-child(1) .photo,
+    .card:nth-child(3) .photo {
+        margin-right: 20px;
+    }
+    .card:nth-child(2) .photo {
+        margin-left: 20px;
+    }
+    .card .photo img {
+        width: 100%;
+        height: 100%;
+    }
+    .card:nth-child(2) .photo {
+        float: right;
+    }
+    .card:nth-child(2) {
+        text-align: right;
+    
+    }
+    .card .desc {
+        margin-top: 45px;
+    }
+    .card .desc p {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo">
+                    <h1>begginning your<br>journey</h1>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="inner">
+            <div class="cardItem">
+                <div class="card">
+                    <div class="photo">
+                        <img src="./img/code-1839406_1280.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Repellat, cupiditate?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./img/IMG_3151.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Repellat, cupiditate?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./img/mountain-3676150_1280.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Repellat, cupiditate?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

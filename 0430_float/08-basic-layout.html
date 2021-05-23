@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>basic layout</title>
+<style>
+    header {
+        background: gold;
+        height: 100px;
+        text-align: center;
+        font-style: 3rem;
+        line-height: 100px;
+    }
+    section {
+        height: 500px;
+    }
+    section.left {
+        width: 20%;
+        background: grey;
+        text-align: center;
+        font-style: 3rem;
+        line-height: 100px;
+        /* width: 50%; */
+        float: left;
+    }
+    section.right {
+        background: darkblue;
+        text-align: center;
+        font-style: 3rem;
+        line-height: 100px;
+        float: right;
+        width: 80%;
+    }
+    footer {
+        background: darkkhaki;
+        height: 200px;
+        text-align: center;
+        font-style: 3rem;
+        line-height: 100px;
+        clear: both;
+    }
+</style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <section class="left">
+        left
+    </section>
+    <section class="right">
+        right
+    </section>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>

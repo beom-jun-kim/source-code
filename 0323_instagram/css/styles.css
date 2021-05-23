@@ -1,0 +1,173 @@
+@charset "utf-8";
+@import "reset.css";
+
+#app {
+    width: 500px;
+    margin: 5% auto;
+    border: 3px solid #999;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+header {
+    /* border: 1px solid #3e3e3e; */
+    text-align: center;
+    height: 50px;
+    padding: 2%;
+    border-bottom: 1px solid #3e3e3e;
+}
+header .logo {
+    display: inline-block;
+    margin: 0 -6px;
+    width: 80%;
+}
+header > a {
+    /* display: inline-block; */
+    width: 10%;
+}
+
+header a:hover {
+    /* display: block; */
+    color: #ddd;
+}
+header img {
+    /* display: inline-block; */
+    width: 100px;
+    height: 29px;
+    padding-top: 5px;
+}
+
+
+.story {
+    /* border: 1px solid #000; */
+    height: 150px;
+    padding: 12px;
+    border-bottom: 1px solid #3e3e3e;
+    margin-top: 2px;
+}
+.story .storyItem {
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+.story .storyItem a {
+
+    /* storyItem에 inline을 주어야 가로 일렬로 정렬이 되는거고
+       a자체에 또 block주어야 글자가 밑으로 떨어진다 */
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 2%;
+    transition: all 0.8s;
+}
+.story .storyItem a:hover {
+    transform: scale(0.9);
+}
+.story .storyItem span {
+    font-size: 13px;
+    color: #3e3e3e;
+}
+.story .gradient {
+    background: linear-gradient(red, yellow);
+    border-radius: 50%;
+}
+.story img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.profile .top {
+    height: 70px;
+    padding: 10px;
+}
+.profile .top li {
+    display: inline-block;
+    vertical-align: top;
+}
+.profile .top li:nth-child(1) a {
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+}
+.profile .top li:nth-child(1) img {
+    width: 100%;
+    border-radius: 50%;
+}
+.profile .top li:nth-child(1),
+.profile .top li:nth-child(3) {
+    width: 10%;
+}
+.profile .top li:nth-child(2) {
+    width: 80%;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.profile .top li:nth-child(3) {
+    padding-top: 8px;
+}
+.profile .memberId {
+    font-size: 13px;
+}
+.profile .location {
+    font-size: 13px;
+    color: #666;
+}
+.profile .photo img {
+    width: 100%;
+    margin-bottom: -8px;
+}
+
+.profile .bottom {
+    /* display: block; */
+    /* padding: 2%; */
+}
+.bottom .icons {
+    /* display: inline-block; */
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.bottom .icons i:nth-child(1) {
+    color:red;
+}
+
+.bottom .icons i:nth-child(1),
+.bottom .icons i:nth-child(2) {
+    padding-right: 3px;
+    padding-top: 10px;
+}
+
+.bottom p {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+
+
+footer  {
+    height: 55px;
+    border-top: 1px solid #666;
+}
+footer ul {
+    font-size: 0;
+    height: 55px;
+}
+footer li {
+    display: inline-block;
+    font-size: 16px;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    line-height: 55px;
+
+    /* 이런방법도 있음 */
+    /* margin-right: -5px;    */
+}
+footer li i {
+    vertical-align: middle;
+}
+footer li a:hover {
+    display: block;
+    color: #fff;
+    background-color: #3e313750;
+}

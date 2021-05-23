@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    width: 1924px;
+    background: linear-gradient(to right, #FF4081, #FF7878);
+}
+header .logo {
+
+}
+header .logo h1 {
+    display: inline-block;
+    width: 10%;
+    font-family: 'InkLipquid';
+    vertical-align: top;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+header .logo h1:hover {
+    opacity: .5;
+}
+header .logo ul {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+}
+header .logo ul li:hover {
+    opacity: .5;
+}
+header .logo ul li {
+    margin: 0 10px;
+}
+header .logo .search {
+    display: inline-block;
+    transform: translateX(900px);
+    vertical-align: top;
+    line-height: 49px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    padding: 1px 5px;
+    margin-top: 5px;
+    color: #fff;
+}
+header .logo .search:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+header .logo .search i {
+    display: inline-block;
+    margin-top:12px;
+    vertical-align: top;
+}
+header .logo .search h3 {
+    display: inline-block;
+}
+header .logo .login {
+    display: inline-block;
+    transform: translateX(1030px);
+    margin-top: 15px;
+    color: #fff;
+    
+}
+header .logo .loginBox {
+    display: inline-block;
+    transform: translateX(-100px);
+}
+
+header .logo .login a {
+
+}
+header .logo .login i {
+
+}
+header .logo .login h4 {
+    display: inline-block;
+}
+header .logo .center {
+    display: inline-block;
+    transform: translateX(-100px);
+}
+header .logo .center a {
+    
+}
+header .logo .center i {
+    
+}
+header .logo .center h4 {
+
+}
+.banner {
+    display: inline-block;
+    width: 1924px;
+    height: 348px;
+    font-size: 0;
+    overflow: hidden;
+}
+.scroll {
+    width: 5772px;
+    height: 348px;
+    animation: roll 15s infinite alternate;
+}
+.scroll img {
+    width: 1924px;
+    height: 348px;
+}
+@keyframes roll {
+    50% {
+        margin-left: -1924px;
+    }
+    100% {
+        margin-left: -3848px;
+    }
+}
+.title {
+    text-align: center;
+}
+.title .titleBox {
+    width: 200px;
+    margin: 20px auto;
+}
+.title .titleBox i {
+    font-size: 2rem;
+}
+.title .titleBox h1 {
+    margin-top: 10px;
+}
+.title .titleBox h5 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.more {
+    text-align: right;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+.more .moreBox {
+
+}
+.more .moreBox h3 {
+    display: inline-block;
+}
+.more .moreBox:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+.more .moreBox i {
+    font-size: 20px;
+    transform: rotateZ(45deg);
+}
+.photo {
+    width: 1800px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.photo ul{
+    width: 1700px;
+    text-align: center;
+    margin: 30px 0;
+}
+.photo ul li{
+    margin: 0 50px;
+}
+.photo ul li img {
+    cursor: pointer;
+    transition: 1s;
+}
+.photo ul li:hover img {
+    transform: scale(1.1);
+}
+.photo ul li p {
+    margin-top: 3px;
+}
+.hrBox {
+    width: 1700px;
+    margin: 0 auto;
+}
+footer {
+    margin: 20px;
+    width: 1700px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer .inner {
+    width: 1700px;
+}
+footer .inner .address {
+    display: inline-block;
+    margin-bottom: 20px;
+    transform: translateY(-20px);
+}
+footer .inner .address p {
+    text-align-last: left;
+    margin-top: -10px;
+}
+footer .inner .sns {
+    display: inline-block;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+footer .inner .sns .store {
+    
+}
+footer .inner .sns .store .app {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+    background: #222;
+    color: #999;
+}
+footer .inner .sns .store .app:hover {
+    cursor: pointer;
+    color: #222;
+    background: #999;
+}
+footer .inner .sns .store .app i {
+    display: inline-block;
+    line-height: 44px;
+    font-size: 2rem;
+}
+footer .inner .sns .store .app p {
+    display: inline-block;
+    text-align-last: left;
+}
+footer .inner .sns .store .app p span {
+    display: block;
+}
+footer .inner .sns .snsContainer {
+    transform: translateX(-10px);
+}
+footer .inner .sns .snsContainer a {
+    font-size: 2rem;
+}
+footer .inner .sns .snsContainer a i {
+    transition: 1s;
+    color: #999;
+}
+footer .inner .sns .snsContainer a:nth-child(1):hover i {
+    color: #04CF5C;
+    transform: rotateY(360deg);
+}
+footer .inner .sns .snsContainer a:nth-child(2):hover i {
+    color: #f57d00;
+    transform: rotateY(360deg);
+}
+footer .inner .sns .snsContainer a:nth-child(3):hover i {
+    color: #3b5999;
+    transform: rotateY(360deg);
+}
+footer .inner .sns .snsContainer a:nth-child(4):hover i {
+    color: #e4405f;
+    transform: rotateY(360deg);
+}

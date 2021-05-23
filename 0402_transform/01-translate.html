@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>translate</title>
+<style>
+    body {
+        text-align: center;
+    }
+    .box {
+        width: 500px;
+        height: 500px;
+        margin-top: 200px;
+        display: inline-block;
+        background: gold;
+        border: 5px solid #000;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        transition: 1s;
+    }
+    .box:hover img {
+        /* 개체를  옮기는 것 */
+
+        
+            /* x축으로 100px만큼 이동하였다. */
+        /* %도 괜찮고 -도 괜찮다. */
+        /* y축으로도 줄 수 있다. */
+        /* 두개 적으면 x축,y축 설정이 된다. 
+            ex)translateX(100px, 100px)*/
+            transform: translateX(50%, 50%);
+            transition-timing-function: ease;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/easter-4945288_640.jpg" alt="토끼인형">
+    </div>
+</body>
+</html>

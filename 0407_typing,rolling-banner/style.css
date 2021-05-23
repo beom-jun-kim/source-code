@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 800px;
+    margin: 100px auto;
+    background: #fff;
+    box-shadow: 0 0 5px 2px #888;
+}
+.wrap h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: gold;
+    padding: 1rem;
+    text-shadow: 0 0 5px #777;
+}
+.myskill{
+    padding: 5px;
+}
+.myskill span{
+    color:lightslategrey
+}
+.myskill p span:first-child{
+    display: inline-block;
+    width: 100px;
+}
+.myskill .skillbar{
+    border: 1px solid rgb(128, 128, 128);
+    padding: 3px;
+    border-radius: 20px;
+}
+.skillbar .skillprocess{
+    height: 20px;
+    border-radius: 20px;
+    animation: skill1 2s ease-in 1 normal forwards ;
+    overflow: hidden;
+}
+.myskill:nth-child(1) .core {
+    width: 60%;
+}
+.myskill:nth-child(2) .core{
+    width: 50%;
+}
+.myskill:nth-child(3) .core{
+    width: 20%;
+}
+.myskill:nth-child(4) .core{
+    width: 80%;
+}
+.myskill:nth-child(5) .core{
+    width: 100%;
+}
+.core {
+    height: 100%;
+    background: linear-gradient(to right ,white,gold);
+    animation: full 2s ease ;
+    border-radius: 20px;
+}
+@keyframes full {
+    0% {
+        width: 0%;
+    }
+}

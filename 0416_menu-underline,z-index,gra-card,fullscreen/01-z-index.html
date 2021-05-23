@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style>
+    .container {
+        width: 500px;
+        height: 500px;
+        background: skyblue;
+        z-index: 9999;
+    }
+    .box1 {
+        width: 200px;
+        height: 200px;
+        background: gold;
+
+        /* 붕 떠있다 */
+        position: absolute;
+        left: 100px;
+        /* inline-block, block 반대로 적용 */
+        /* margin-bottom: -50px; */
+
+        /* 오른쪽이나 뒤에써진 ele가 우선 순위가 높다 */
+        /* i-block가 block보다 우선순위가 높다 */
+
+        /* 순서를 정할 수 있음 */
+        /* 숫자 큰 애가 앞으로 온다 */
+        /* 디폴트가 0 */
+        /* 음수값으로도 줄 수 있다 */
+        /* z-index: 10; */
+    }
+    .box2 {
+        /* 임마가 뒤에 있어서 더 위에 뜬다 (우선순위) */
+        /* 앱솔루트가 있어야 제트인덱스가 먹힘 */
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: coral;
+        left: 200px;
+        top: 100px;
+        z-index: 11;
+    }
+    .ball1 {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background: darkblue;
+
+        /* 안움직임 */
+        z-index: 12;
+    }
+    /* .ball2 {
+        width: 100px;
+        height: 100px;
+        background: darkgoldenrod;
+    } */
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="ball1"></div>
+        </div>
+        <div class="box2">
+            <div class="ball2"></div>
+        </div>
+    </div>
+</body>
+</html>

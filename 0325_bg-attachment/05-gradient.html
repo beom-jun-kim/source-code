@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>gradient</title>
+<style>
+    .box {
+        width: 500px;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        /*                          방향           색상         색상 */
+        /*                          방향은 뒤에 색 기준으로 끝나는것 */
+/*                                  색상에 커서올리면 오퍼시티 조정가능 */
+        background: linear-gradient(to right bottom, #E66465, #9198E5);
+    }
+    .box2 {
+        background: linear-gradient( to right,#E66465, #9198E5);
+        width: 500px;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 500px;
+    }
+    .box3 {
+        background: linear-gradient( to left top,#E66465, #9198E5);
+        width: 500px;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 500px;
+    }
+    .box4 {
+        background: linear-gradient( to left,#E66465, #9198E5);
+        width: 500px;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 500px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+    <div class="box2">
+        box2
+    </div>
+    <div class="box3">
+        box4
+    </div>
+    <div class="box4">
+        box4
+    </div>
+</body>
+</html>

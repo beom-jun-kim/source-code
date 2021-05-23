@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>prac</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrap {
+        width: 600px;
+        /* height: 500px; */
+        border: 1px solid #000;
+        margin: 200PX auto;
+    }
+    .inner {
+        /* width: 500px; */
+        height: 100%;
+        border: 1px solid #000;
+        margin: 0 auto;
+    }
+    .inner h1 {
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 10px 10px 4px pink;
+        color: darkorchid;
+    }
+    .inner p {
+        margin-left: 10px;
+    }
+    .ability {
+        /* display: inline-block; */
+        border: 1px solid #000;
+        width: 90%;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        /* margin: 20px; */
+    }
+
+    /* hover를 주려면 widht 0%값을 주기 */
+    .inner .ability .ability-bar1 {
+        width: 0%;
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        transition: 1s;
+    }
+    .inner .ability .ability-bar2 {
+        width: 0%;
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        transition: 1s;
+    }
+    .inner .ability .ability-bar3 {
+        width: 0%;
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        transition: 1s;
+    }
+    .inner .ability .ability-bar4 {
+        width: 0%;
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        transition: 1s;
+    }
+    .inner .ability .ability-bar5 {
+        width: 0%;
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        transition: 1s;
+    }
+    .inner:hover .ability .ability-bar1 {
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        width: 80%;
+        height: 15px;
+        transition-timing-function: ease;
+    }
+    .inner:hover .ability .ability-bar2 {
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        width: 90%;
+        height: 15px;
+        transition-timing-function: ease;
+    }
+    .inner:hover .ability .ability-bar3 {
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        width: 100%;
+        height: 15px;
+        transition-timing-function: ease;
+    }
+    .inner:hover .ability .ability-bar4 {
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        width: 80%;
+        height: 15px;
+        transition-timing-function: ease;
+    }
+    .inner:hover .ability .ability-bar5 {
+        margin-top: 7px;
+        background: linear-gradient(to right, darkorchid, pink);
+        width: 90%;
+        height: 15px;
+        transition-timing-function: ease;
+    }
+    /* @keyframes prac {
+        0% {
+            transform: translate();
+        }
+        50 % {
+
+        }
+        100 % {
+
+        }
+    } */
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <h1>software skills</h1>
+            <p>
+                <span>HTML</span>
+                <span>80%</span>
+            </p>
+            <div class="ability">
+                <div class="ability-bar1"></div>
+            </div>
+            <p>
+                <span>photoshop</span>
+                <span>90%</span>
+            </p>
+            <div class="ability">
+                <div class="ability-bar2"></div>
+            </div>
+            <p>
+                <span>premiere</span>
+                <span>100%</span>
+            </p>
+            <div class="ability">
+                <div class="ability-bar3"></div>
+            </div>
+            <p>
+                <span>Illustrator</span>
+                <span>80%</span>
+            </p>
+            <div class="ability">
+                <div class="ability-bar4"></div>
+            </div>
+            <p>
+                <span>JS</span>
+                <span>90%</span>
+            </p>
+            <div class="ability">
+                <div class="ability-bar5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

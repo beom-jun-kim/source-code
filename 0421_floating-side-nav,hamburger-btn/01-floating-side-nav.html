@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>floationg side nav</title>
+<style>
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+    }
+
+    /* button */
+    input[id="menuBtn"] {
+        display: none;
+    }
+    /* sideNav */
+    .sideNav {
+        background: pink;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        transform: translate(100%);
+        transition: .5s;
+    }
+    .sideNav label {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        top: 100px;
+        right: 100%;
+        background: pink;
+        border-radius: 30px 0 0 30px;
+    }
+    .sideNav label:hover,
+    .sideNavMenu li a:hover {
+        background: #888;
+        color: #fff;
+        cursor: pointer;
+    }
+    .sideNavMenu li a {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    /* check Event */
+    /* checked 가상 class */
+    /* 인접형제 선택자 (+) */
+    input[id="menuBtn"]:checked + .sideNav {
+        transform: translate(0);
+    }
+</style>
+</head>
+<body>
+    <input type="checkbox" id="menuBtn">
+
+    <!-- 웹표준 -->
+    <!-- 용도에 맞는 태그를 사용해야 한다 왜냐면 검색에 영향을 준다 -->
+    <nav class="sideNav">
+        <label for="menuBtn">menu</label>
+        <ul class="sideNavMenu">
+            <li><a href="#">submenu1</a></li>
+            <li><a href="#">submenu2</a></li>
+            <li><a href="#">submenu3</a></li>
+            <li><a href="#">submenu4</a></li>
+            <li><a href="#">submenu5</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>typing</title>
+<style>
+    .box {
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        /* border: 1px solid #000; */
+        position: relative;
+        display: inline-block;
+        letter-spacing: 3px;
+        
+        /* 투명하게 */
+        color: transparent;
+    }
+    h1:before {
+        content: attr(data-test);
+        color: #000;
+        /* border: 1px solid red; */
+        position: absolute;
+        width: 0;
+        border-right: 1px solid #000;
+        animation: typing 3s infinite steps(6);
+        overflow: hidden;
+
+        /* 옆으로 나열댐 밑으로 안떨어지게 하는 효과*/
+        white-space: nowrap;
+
+    }
+    @keyframes typing {
+        50% {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <h1 data-text="구독해주세요">구독해주세요</h1>
+    </div>
+</body>
+</html>

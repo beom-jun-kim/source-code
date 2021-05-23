@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual-selector</title>
+<style>
+    div {
+        font-size: 100px;
+        background-color: coral;
+        color: #fff;
+    }
+    a{
+        color: blue
+        font-size: 100px;
+        color: black;
+    }
+
+    /* 방문하지 않은 상태일때를 선택 */
+    a:link {
+        color: black;
+    }
+
+    /* 방문한 상태일 때 */
+    a:visited {
+        color: skyblue;
+    }
+
+    /* 마우스가 올라간 상태일 때 */
+    a:hover {
+        background-color: #ddd;
+    }
+
+    /* 클릭된 상태일 때 */
+    a:active {
+        background-color: tomato;
+    }
+
+    /* 포커스가 들어와 있을 때 tap이 된 상태일때 */
+    a:focus {
+        background-color: teal;
+    }
+    /* ↑ 순서가 이대로 가야함 */
+</style>
+</head>
+<body>
+    <h1>가상 셀렉터</h1>
+    <div>
+        <a href="https://www.naver.com">
+            naver
+        </a>
+    </div>
+    <hr>
+    <a href="https://www.thehersheycompany.com">
+        hershes
+    </a>
+    <hr>
+    <a href="https://www.yahoo.com">
+        yahoo
+    </a>
+</body>
+</html>

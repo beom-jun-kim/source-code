@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    /* padding-top에 필요성
+    1.사이즈가 각자 다른 이미지를 동일하게 표현하기 위해서
+    2. 네트워크 상태가 느릴때 미리 이미지가 출력될 공간을 미리 확보한다.> 화면이 무너졌다가 완성되는 불편을 없애준다
+     */
+    .grid {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .grid-item {
+        width: 25%;
+        padding-top: 25%;
+        float: left;
+        height: 0;
+        /* padding: 1rem; */
+        position: relative;
+    }
+    .grid-1-4 {
+        width: 25%;
+    }
+    .grid-2-4 {
+        width: 50%;
+    }
+    .grid-3-4 {
+        width: 75%;
+    }
+    .grid-4-4 {
+        width: 100%;
+    }
+    .grid-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+    .grid-item:nth-child(5),
+    .grid-item:nth-child(6),
+    .grid-item:nth-child(7)
+    {
+        width: 33.3333%;
+    }
+    .grid-item:nth-child(8),
+    .grid-item:nth-child(9)
+    {
+        width: 50%;
+    }
+</style>
+</head>
+<body>
+    <div class="grid clearfix">
+        <div class="grid-item grid-1-4">
+            <img src="../img/movie03.png" alt="">
+        </div>
+        <div class="grid-item grid-1-4">
+            <img src="../img/movie04.png" alt="">
+        </div>
+        <div class="grid-item grid-1-4">
+            <img src="../img/movie05.png" alt="">
+        </div>
+        <div class="grid-item grid-1-4">
+            <img src="../img/movie06.png" alt="">
+        </div>
+        <div class="grid-item grid-3-4">
+            <img src="../img/movie07.png" alt="">
+        </div>
+        <div class="grid-item grid-1-4">
+            <img src="../img/movie02.png" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="../img/movie03.png" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="../img/movie02.png" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="../img/dfdf.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

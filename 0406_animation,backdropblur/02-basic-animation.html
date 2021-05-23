@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+<style>
+    .box {
+        border: 1px solid #000;
+        height: 50px;
+    }
+    .battery {
+        width: 10%;
+        height: 100%;
+        background: gold;
+        /* animation-name: full; */
+
+        /* 몇초동안 가느냐 */
+        /* animation-duration: 2s; */
+
+        /* 몇초 딜레이가 되느냐  */
+        /* animation-delay: 1s; */
+
+        /* 디폴트가 1이다 */
+        /* 반복하는 횟수를 적어준다*/
+        /* infinite는 무한반복 */
+        /* animation-iteration-count: infinite; */
+
+        /* 왔다갔다하는거 */
+        /* animation-direction: alternate; */
+
+        /* 반대로 뒤에서 줄어드는거 */
+        /* animation-direction: reverse; */
+
+        /* 대기 시점에 상태를 적용과 유지 한다*/
+        /* animation-fill-mode: backwards; */
+
+        /* 끝 시점의 상태를 유지한다 */
+        /* animation-fill-mode: forwards; */
+
+        /* 위에 backwards와 forwards 둘다 적용 */
+        /* animation-fill-mode: both; */
+
+        /*  */
+        /* animation-timing-function: linear; */
+
+        /* 한번에 할 수 있는거 */
+        /* 이름,몇초동안 가느냐,가는스타일,딜레이,반복횟수 */
+        /* animation: full 3s linear 0.5s infinite alternate; */
+    }
+    /* cursor:pointer;를 사용하여 멈추게한다 */
+    .battery:hover {
+        animation: full 3s linear 0.5s infinite alternate;
+        /* animation-play-state: paused; */
+    }
+    @keyframes full {
+        0% {
+            width: 10%;
+            background: red;
+        }
+        /* 
+            퍼센트를 많이 줄수록 움직임이
+            자연스러워진다(frame을 나누는 행위) 소수점도 가능. 
+         */
+        50% {
+            background: cornflowerblue;
+        }
+        100% {
+            width: 100%;
+            font-size: 3rem;
+            height: 200px;
+            background: coral;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="battery">
+            battery
+        </div>
+    </div>
+</body>
+</html>

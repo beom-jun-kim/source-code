@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: 1px solid #000; */
+    }
+    .container .cardItem {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+    .container .cardItem img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .text {
+        
+        border: 1px solid #000;
+        border-radius: 10px;
+        position: absolute;
+        top: -80px;
+        left: -15%;
+        background: #333;
+        color: #fff;
+        width: 100px;
+        opacity: 0;
+        transition: 1s;
+        padding: 0 1rem;
+        margin-bottom: 5px;
+    }
+    .cardItem:hover .text {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    .cardItem:hover img {
+        opacity: .5;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="cardItem">
+            <img src="./images/spring-story.jpg" alt="">
+            <div class="text">
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+        <div class="cardItem">
+            <img src="./images/spring-story.jpg" alt="">
+            <div class="text">
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+        <div class="cardItem">
+            <img src="./images/spring-story.jpg" alt="">
+            <div class="text">
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

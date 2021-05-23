@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skill progress</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #111;
+        color:#999
+    }
+    .container {
+        border: 1px solid #999;
+        width: 900px;
+        margin: 100px auto;
+        padding: 1rem;
+    }
+    .container h1 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .container .item {
+        /* border: 1px solid blue; */
+    }
+    .container .item p span:first-child {
+        display: inline-block;
+        /* border: 1px solid gold; */
+        width: 100px;
+    }
+    .container .item .progress {
+        border: 1px solid white;
+        padding: 5px;
+    }
+    .container .item .progress-bar {
+        /* border: 1px solid white; */
+        height: 30px;
+        background: linear-gradient(to right, gold, red);
+        width: 70%;
+    }
+    .container .item:nth-of-type(1) .progress-bar {
+        width: 70%;
+    }
+    .container .item:nth-of-type(2) .progress-bar {
+        width: 80%;
+    }
+    .container .item:nth-of-type(3) .progress-bar {
+        width: 60%;
+    }
+    .container .item:nth-of-type(4) .progress-bar {
+        width: 90%;
+    }
+    .container .item:nth-of-type(5) .progress-bar {
+        width: 70%;
+    }
+    .container .item:nth-of-type(6) .progress-bar {
+        width: 50%;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>software skils</h1>
+        <div class="item">
+            <p>
+                <span>
+                    HTML5                    
+                </span>
+                <span>
+                    70%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    css3                    
+                </span>
+                <span>
+                    80%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    javascript                    
+                </span>
+                <span>
+                    60%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    jQuary                    
+                </span>
+                <span>
+                    90%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    photoshop                    
+                </span>
+                <span>
+                    70%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    illustrator                    
+                </span>
+                <span>
+                    50%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

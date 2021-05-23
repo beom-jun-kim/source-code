@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>transtion prac</title>
+<style>
+    .container {
+        border: 1px solid #000;
+    }
+    .item {
+        width: 10%;
+        height: 100px;
+        background:darksalmon;
+        cursor: pointer;
+
+        /* 앞에 0은 생략가능 */
+        /* hover에는 쓰지 않는다 */
+        
+        /* transition-duration: 1s; */
+        /* transition-delay: .5s; */
+        /* transition-timing-function: ease; */
+
+        /* property, duration, delay, function */
+        transition: all 1s;
+    }
+    .item:hover {
+        width: 100%;
+        height: 200px;
+        background: gold;
+        font-size: 2rem;
+        color: blue;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            battery
+        </div>
+    </div>
+</body>
+</html>

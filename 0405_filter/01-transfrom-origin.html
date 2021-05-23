@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>tran org</title>
+<style>
+    .container {
+        text-align: center;
+    }
+    .item {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background: firebrick;
+        border: 1px solid #000;
+        transition: 1s cubic-bezier(0.77,-0.07, 0.4, 1.37);
+
+        /* 지정해준 위치를 기준으로 축을 정하여 커짐 */
+        /* 두가지 지정도 됨 */
+        /* rotate,skew도 설정가능 */
+        transform-origin: bottom;
+    }
+    .item:hover {
+        /* transform: scale(1.5); */
+        -moz-transform: 
+        scale(1.2) rotate(10deg) translateX(100px) translateY(100px) skewX(10deg) skewY(10deg);
+        -webkit-transform: 
+        scale(1.2) rotate(10deg) translateX(100px) translateY(100px) skewX(10deg) skewY(10deg);
+        -o-transform: 
+        scale(1.2) rotate(10deg) translateX(100px) translateY(100px) skewX(10deg) skewY(10deg);
+        -ms-transform: 
+        scale(1.2) rotate(10deg) translateX(100px) translateY(100px) skewX(10deg) skewY(10deg);
+        transform: 
+        scale(1.2) rotate(10deg) translateX(100px) translateY(100px) skewX(10deg) skewY(10deg);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>

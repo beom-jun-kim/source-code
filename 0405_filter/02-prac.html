@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>prac</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+    }
+    ul {
+        margin: 50px;
+    }
+    ul li {
+        width: 200px;
+        height: 90px;
+        display: inline-block;
+        border: 1px solid #000;
+        background: yellow;
+        text-align: center;
+        line-height: 100px;
+        color: #111;
+        font-weight: bold;
+    }
+
+    /* 중첩이 가능함 */
+    .translate:hover li:nth-child(1) {
+        transform: translateX(50px);
+    }
+    .translate:hover li:nth-child(2) {
+        transform: translateY(50px);
+    }
+    .translate:hover li:nth-child(3) {
+        transform: translate(50px);
+    }
+    .rotate:hover li:nth-child(1) {
+        transform: rotateX(30deg);
+    }
+    .rotate:hover li:nth-child(2) {
+        transform: rotatey(30deg);
+    }
+    .rotate:hover li:nth-child(3) {
+        transform: rotate(30deg);
+    }
+    .scale:hover li:nth-child(1) {
+        transform: scaleX(1.2);
+    }
+    .scale:hover li:nth-child(2) {
+        transform: scaleY(1.2);
+    }
+    .scale:hover li:nth-child(3) {
+        transform: scale(1.3);
+    }
+    .skew:hover li:nth-child(1) {
+        transform: skewX(30deg);
+    }
+    .skew:hover li:nth-child(2) {
+        transform: skewY(30deg);
+    }
+    .skew:hover li:nth-child(3) {
+        transform: skew(30deg);
+    }
+</style>
+</head>
+<body>
+    <ul class="translate">
+        <li>
+            <div class="box">
+                <p>trnaslateX</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>trnaslateY</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>trnaslate</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="rotate">
+        <li>
+            <div class="box">
+                <p>rotateX</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>rotateY</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>rotate</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="scale">
+        <li>
+            <div class="box">
+                <p>scaleX</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>scaleY</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>scale</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="skew">
+        <li>
+            <div class="box">
+                <p>skewX</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>skewY</p>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <p>skew</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
