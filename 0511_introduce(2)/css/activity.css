@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: '국립박물관문화재단클래식L';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrap {
+    width: 100%;
+}
+header {
+    font-family: '국립박물관문화재단클래식L';
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    /* border: 1px solid #000; */
+    line-height: 70px;
+    color: #fff;
+    background: #000;
+    text-transform: capitalize;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+section.banner {
+    margin-top: 70px;
+}
+section.banner .bannerContainer {
+    text-align: center;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    /* text-align: left; */
+    background: url(../images/초능력.jpg) no-repeat center/cover;
+    position: relative;
+    
+}
+section.banner .bannerContainer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.445);
+}
+section.banner .bannerContainer .inner {
+    width: 550px;
+    margin: 0 auto;
+    color: #eee;
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    text-align-last: left;
+}
+section.banner .bannerContainer .oceanWorld {
+    margin: 0 auto;
+    text-align-last: left;
+    width: 600px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+section.banner .bannerContainer .oceanWorld_sub {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 15px;
+}
+section.banner .bannerContainer .inner .a_tag {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    position: relative;
+    padding: 5px 10px;
+    overflow: hidden;
+    width: 100px;
+    border: 1px solid #eee;
+}
+section.banner .bannerContainer .inner .a_tag a {
+    margin-left: 16px;
+    text-transform: uppercase;
+}
+section.banner .bannerContainer .inner .a_tag a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(97, 96, 96, 0.308);
+    transition: .8s;
+}
+section.banner .bannerContainer .inner .a_tag:hover a:before {
+    width: 100%;
+}
+section.activity {
+    margin-top: 60px;
+}
+section.activity .inner {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+section.activity .inner h1 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-family: '국립박물관문화재단클래식L';
+}
+section.activity h1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    height: 11px;
+    border-radius: 20px;
+    margin: 0 -10px;
+    background: coral;
+    z-index: -1;
+}
+section.activity .inner .photo .photo_text {
+    text-align-last: left;
+}
+section.activity .inner .photo .photo_text h5 {
+    font-size: 25px;
+    position: absolute;
+    bottom: 100%;
+    transition: 1s;
+    left: 20px;
+    opacity: 0;
+    color: #fff;
+}
+section.activity .inner .photo:hover h5 {
+    top: 30%;
+    opacity: 1;
+}
+section.activity .inner .photo .photo_text p {
+    position: absolute;
+    bottom: 100%;
+    transition: 1s;
+    left: 20px;
+    opacity: 0;
+    color: #fff;
+}
+section.activity .inner .photo:hover p {
+    top: 50%;
+    opacity: 1;
+}
+section.activity .inner .photo {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+section.activity .inner .photo:before {
+    content: '';
+    transition: 1s;
+}
+section.activity .inner .photo:hover:before {
+    content: '';
+    position: absolute;
+    background: rgba(37, 37, 37, 0.349);
+    width: 100%;
+    height: 100%;
+}
+section.activity .inner .photo img {
+    width: 100%;
+    height: 100%;
+}
+section.work {
+    margin-top: 20px;
+}
+section.work .inner {
+    position: relative;
+    /* border: 1px solid #000; */
+    width: 100%;
+    padding-bottom: 50px;
+}
+section.work .inner .art {
+    display: inline-block;
+    position: relative;
+    /* border: 1px solid blue; */
+    left: 26%;
+}
+section.work .inner .art img {
+    cursor: pointer;
+}
+section.work .inner .art img:nth-child(1) {
+    width: 350px;
+    height: 350px;
+}
+section.work .inner .art img:nth-child(2) {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+section.work .inner .art img:hover:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+}
+section.work .inner .art img:nth-child(3) {
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+section.work .inner .art img:hover:nth-child(3) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+}
+section.work .inner .artText {
+    position: absolute;
+    left: -210px;
+    bottom: 40%;
+    text-align: right;
+}
+section.work .inner .areText h1 {
+    margin-bottom: 10px;
+}
+section.work .inner .areText p {
+    
+}
+section.work .inner .sns {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    /* border: 1px solid #000; */
+    text-align: center;
+    transform: translateY(-50%);
+}
+section.work .inner .sns .snsTitle {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+section.work .inner .sns .sns_sub {
+    margin-top: 20px;
+}
+section.work .inner .sns .sns_sub a:nth-child(2) {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+section.work .inner .sns .sns_sub i {
+    font-size: 40px;
+}
+section.work .inner .sns .sns_sub a:nth-child(1) i {
+    color: #999;
+    transition: 1s;
+}
+section.work .inner .sns .sns_sub a:nth-child(2) i {
+    color: #999;
+    transition: 1s;
+}
+section.work .inner .sns .sns_sub a:nth-child(3) i {
+    color: #999;
+    transition: 1s;
+}
+section.work .inner .sns .sns_sub a:hover:nth-child(1) i {
+    color: #00c300;
+    transform: rotateY(360deg);
+}
+section.work .inner .sns .sns_sub a:hover:nth-child(2) i {
+    color: #34465d;
+    transform: rotateY(360deg);
+}
+section.work .inner .sns .sns_sub a:hover:nth-child(3) i {
+    color: #cd201f;
+    transform: rotateY(360deg);
+}
