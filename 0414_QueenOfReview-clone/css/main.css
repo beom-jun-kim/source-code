@@ -10,9 +10,6 @@ header {
     width: 1924px;
     background: linear-gradient(to right, #FF4081, #FF7878);
 }
-header .logo {
-
-}
 header .logo h1 {
     display: inline-block;
     width: 10%;
@@ -76,13 +73,6 @@ header .logo .loginBox {
     display: inline-block;
     transform: translateX(-100px);
 }
-
-header .logo .login a {
-
-}
-header .logo .login i {
-
-}
 header .logo .login h4 {
     display: inline-block;
 }
@@ -90,21 +80,13 @@ header .logo .center {
     display: inline-block;
     transform: translateX(-100px);
 }
-header .logo .center a {
-    
-}
-header .logo .center i {
-    
-}
-header .logo .center h4 {
-
-}
 .banner {
     display: inline-block;
     width: 1924px;
     height: 348px;
     font-size: 0;
     overflow: hidden;
+    cursor: pointer;
 }
 .scroll {
     width: 5772px;
@@ -144,10 +126,8 @@ header .logo .center h4 {
 .more {
     text-align: right;
     margin-right: 30px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-}
-.more .moreBox {
-
 }
 .more .moreBox h3 {
     display: inline-block;
@@ -163,15 +143,24 @@ header .logo .center h4 {
 .photo {
     width: 1800px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px;
+}
+.photo .inner {
+    margin: 0 auto;
 }
 .photo ul{
     width: 1700px;
     text-align: center;
     margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    transform: translate(70px);
 }
 .photo ul li{
-    margin: 0 50px;
+    margin: 0 50px 10px 0;
+    width: 100%;
+    padding: 1rem;
 }
 .photo ul li img {
     cursor: pointer;
@@ -211,12 +200,9 @@ footer .inner .sns {
     margin-left: 50px;
     margin-top: 15px;
 }
-footer .inner .sns .store {
-    
-}
 footer .inner .sns .store .app {
     display: inline-block;
-    border: 1px solid #000;
+    transition: all 300ms;
     padding: 10px;
     border-radius: 20px;
     background: #222;
